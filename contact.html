@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/contact-style.css" />
+    <link rel="icon" href="images/logo1.ico" />
+    <meta name="authors" content="khaleed opeloyeru" />
+    <meta name="description" content="living green" />
+    <meta name="keywords" content="real estate, realty, livin green" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>living green</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left-nav">
+          <img src="images/text-logo.png" />
+        </div>
+        <div class="middle-nav">
+          <a href="index.html">Home</a>
+          <a href="listings.html">Listings</a>
+          <a href="contact.html">Contact</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+        <div class="right-nav">
+          <a href="index.html#get_started">Get Started</a>
+        </div>
+      </nav>
+      <!--mobile nav starts here-->
+      <nav class="mobile-nav">
+        <div class="middle-mobile-nav">
+          <a href="index.html">Home</a>
+          <a href="listings.html">Listings</a>
+          <a href="contact.html">Contact</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </nav>
+      <!--mobile nav ends here-->
+    </header>
+    <main>
+      <div class="contact-container">
+        <h1>We'd love to <span>hear</span> <br />from you</h1>
+        <div class="contact-methods-container">
+          <div class="contact-email-container">
+            <img src="images/mail1.png" class="contact-mail" />
+            <p>Email</p>
+            <p>
+              Monday to Friday<br />
+              Response time: 24<span>-</span>48 hours
+            </p>
+            <div class="send-email-link">
+              <a href="mailto:kopeloye@my.centennialcollege.ca"> Send email </a>
+              <img src="images/right-arrow.png" />
+            </div>
+          </div>
+
+          <div class="contact-email-container">
+            <img src="images/telephone.png" class="contact-mail" />
+            <p>Telephone</p>
+            <p>
+              Weekdays: 9am <span>-</span> 6pm<br />
+              Weekends: 9am <span>-</span> 5pm<br />
+            </p>
+            <div class="send-email-link">
+              <a href="tel:+12345678901"> Call Us </a>
+              <img src="images/right-arrow.png" />
+            </div>
+          </div>
+
+          <div class="contact-email-container">
+            <img src="images/placeholder.png" class="contact-mail" />
+            <p>Walk-in</p>
+            <p>
+              Weekdays: 10am <span>-</span> 5pm<br />
+              Weekends: 10am <span>-</span> 3pm<br />
+            </p>
+            <div class="send-email-link">
+              <a
+                href="https://www.google.com/maps/place/Centennial+College+(Progress+Campus)/@43.7852043,-79.3043868,13z/data=!3m1!5s0x89d4d0f18385715d:0x1e314697074eeb15!4m10!1m2!2m1!1sCentennial+College!3m6!1s0x89d4d0f21fd9078f:0x46e3fe92c0cd2b18!8m2!3d43.7852043!4d-79.2281691!15sChJDZW50ZW5uaWFsIENvbGxlZ2UiA4gBAZIBB2NvbGxlZ2XgAQA!16zL20vMDM2N2dj"
+              >
+                Directions
+              </a>
+              <img src="images/right-arrow.png" />
+            </div>
+          </div>
+        </div>
+
+        <!--contact form starts here-->
+        <div class="contact-form-container">
+          <form
+            name="Instructor evaluation"
+            id="instructor evaluation"
+            action="mailto:kopeloye@my.centennialcollege.ca"
+            method="post"
+          >
+            <div class="personal-information-section" id="Personal_information">
+              <label class="label-margin" for="personal_information"
+                >Contact Information</label
+              >
+              <input
+                type="text"
+                name="Name"
+                id="firstname"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                name="Name"
+                id="lastname"
+                placeholder="Last Name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <input type="text" name="Phone" id="phone" placeholder="Phone" />
+            </div>
+            <div class="semester-information-section" id="semester-information">
+              <label class="label-margin" for="semester-information"
+                >Property details</label
+              >
+              <select>
+                <option>Select Property type</option>
+                <option>House</option>
+                <option>Condominium</option>
+              </select>
+              <input
+                type="number"
+                name="year"
+                id="year"
+                placeholder="Number of bedrooms"
+              />
+              <input
+                type="number"
+                name="coursename"
+                id="coursename"
+                placeholder="Number of bathrooms"
+              />
+              <input
+                type="text"
+                name="coursecode"
+                id="coursecode"
+                placeholder="Location"
+              />
+              <input
+                type="text"
+                name="coursecode"
+                id="priority"
+                placeholder="Priority"
+              />
+              <div class="price-range">
+                <div class="price-range-text">
+                  <label for="range" class="label-margin">Price Range</label>
+                </div>
+                <div class="price-range-bar">
+                  <input
+                    type="range"
+                    name="range"
+                    id="range"
+                    min="0"
+                    max="10000000"
+                  />
+                  <span id="range-value"></span>
+                </div>
+              </div>
+
+              <script>
+                var range = document.getElementById("range");
+                var rangeValue = document.getElementById("range-value");
+
+                rangeValue.innerHTML = range.value.toLocaleString();
+
+                range.addEventListener("input", function () {
+                  rangeValue.innerHTML = this.value.toLocaleString();
+                });
+              </script>
+            </div>
+            <div class="other-comments">
+              <label class="label-margin" for="other-comments">Additional Comments</label>
+              <textarea
+                name="otherComments"
+                id="other-comments"
+                placeholder="Enter Comment here...."
+              ></textarea>
+            </div>
+            <div class="submit-reset">
+              <input class="submit" type="submit" value="submit" />
+              <input class="reset" type="reset" value="Reset" />
+            </div>
+          </form>
+        </div>
+        <!--contact form ends here-->
+      </div>
+    </main>
+    <footer>
+      <div class="top-footer-container">
+        <div class="first-footer-container">
+          <img src="images/text-logo.png" />
+          <p>About us</p>
+          <p>
+            Your satisfaction is our top priority.<br />Thank you for choosing
+            us!
+          </p>
+        </div>
+        <div class="second-footer-container" id="contact">
+          <p>Contact us</p>
+          <p>Reach out to us on the following Platforms</p>
+          <a href="mailto:kopeloye@my.centennialcollege.ca">
+            <img src="images/mail1.png" />
+            Realty@Livinggreen.com
+          </a>
+          <a href="tel:+123456789101">
+            <img src="images/telephone.png" />
+            +1 (234) 567 8910
+          </a>
+          <p>
+            Have Specific Requirements?<br />
+            <a href="contact.html" class="specific-requirements-link"
+              >Click here</a
+            >
+          </p>
+        </div>
+        <div class="third-footer-container">
+          <p>Quick Links</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="sitemap.html">Credit</a></li>
+          </ul>
+        </div>
+        <div class="fourth-footer-container">
+          <a href="images/developer.JPG" target="_blank">
+            <img src="images/developer.JPG" alt="developer picture" />
+          </a>
+          <p>Developer profile</p>
+          <p>Developer: Khaleed Opeloyeru</p>
+          <p>Frontend: HTML and CSS</p>
+          <p>Developer Links:</p>
+          <div class="fourth-footer-bottom-container">
+            <a
+              href="mailto:kopeloye@my.centennialcollege.ca"
+              title="Send an Email"
+            >
+              <img src="images/mail1.png" />
+              khaleedopeloyeru20@gmail.com
+            </a>
+            <a href="https://github.com/khaleedopeloyeru" title="Github">
+              <img src="images/github.png" />
+              Khaleed.opeloyeru
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="bottom-footer-container">
+        <a href="https://www.tiktok.com/en/" target="_blank">
+          <img src="images/tik-tok.png" />
+        </a>
+        <a href="https://twitter.com/?lang=en" target="_blank">
+          <img src="images/twitter.png" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="images/instagram.png" />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="images/facebook.png" alt="facebook profile link" />
+        </a>
+      </div>
+      <p class="copyright">&copy; 2023 Living Green. All rights reserved.</p>
+    </footer>
+    <!-- 
+        student name: Khaleed Opeloyeru
+        student number: 301286462
+        student email: kopeloye@my.centennialcollege.ca
+     -->
+  </body>
+</html>
